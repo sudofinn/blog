@@ -1,0 +1,8 @@
+make vertical navbar ( setting, darkmode, like) in components/ui folder , import in HomePageUi
+
+
+fix hydration -> is in dropdown component
+
+add typewriter and animation ( w. framer motion)
+
+topics use css grid-template-areas mit animation ( von fireship), die haben das jeweilige Colorscheme
