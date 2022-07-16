@@ -1,29 +1,47 @@
 import React from 'react'
+import Link from "next/link"
 
-import MdOutlineWork from "react-icons/md"
-import AiFillBook from "react-icons/ai"
-import BsCodeSlash from "react-icons/bs"
-import GiMeditation from "react-icons/gi"
-import IoMdChatbubbles from "react-icons/io"
-import GiDeadWoodBsFlower1 from "react-icons/gi" 
-import GiWideArrowDunk from "react-icons/gi"
+import {MdOutlineWork} from "react-icons/md"
+import {AiFillBook} from "react-icons/ai"
+import{BsCodeSlash} from "react-icons/bs"
+import { GiMeditation} from "react-icons/gi"
+import {IoMdChatbubbles} from "react-icons/io"
+import {GiFlowerEmblem} from "react-icons/gi" 
+import {GiWideArrowDunk} from "react-icons/gi"
 
 const Topics: React.FC  = () => {
   const techs = [
     {
       id: 1,
-      src: MdOutlineWork,
+      child  : (
+        <>
+           <MdOutlineWork size={30} />
+        </>
+      ),
+      href: "https://linkedin.com",
       title: "Productivity",
       style: "shadow-white",
     },
     {
       id: 2,
       src: AiFillBook,
+      child  : (
+        <>
+           <AiFillBook size={30} />
+        </>
+      ),
+      href: "https://linkedin.com",
       title: "All about books",
       style: "shadow-white",
     },
     {
       id: 3,
+      child  : (
+        <>
+           <BsCodeSlash size={30} />
+        </>
+      ),
+      href: "https://linkedin.com",
       src: BsCodeSlash,
       title: "Programming",
       style: "shadow-white",
@@ -31,18 +49,36 @@ const Topics: React.FC  = () => {
     {
       id: 4,
       src: GiMeditation,
+      child  : (
+        <>
+           <GiMeditation size={30} />
+        </>
+      ),
+      href: "https://linkedin.com",
       title: "Meditation & Peace",
       style: "shadow-white",
     },
     {
       id: 5,
       src: IoMdChatbubbles,
+      child  : (
+        <>
+           <IoMdChatbubbles size={30} />
+        </>
+      ),
+      href: "https://linkedin.com",
       title: "Me and what I think",
       style: "shadow-white",
     },
     {
       id: 6,
-      src: GiDeadWoodBsFlower1,
+      src: GiFlowerEmblem,
+      child  : (
+        <>
+           <GiFlowerEmblem size={30} />
+        </>
+      ),
+      href: "https://linkedin.com",
       title: "Climate change",
       style: "shadow-white",
     }
@@ -61,13 +97,16 @@ const Topics: React.FC  = () => {
         </div>
 
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-16 text-center text-white py-12 px-20 sm:px-8">
-          {techs.map(({ id, src, title, style }) => (
+          {techs.map(({ id, href, child, title, style }) => (
             <div
               key={id}
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
-              
-              <p className="mt-4">{title}</p>
+               <a href={href} target="_blank"
+              rel="noreferrer"
+              className='flex justify-center items-center'
+              ><a>{child}</a></a>
+              <p className="mt-4 text-2xl">{title}</p>
             </div>
           ))}
         </div>
