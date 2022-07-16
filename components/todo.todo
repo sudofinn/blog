@@ -1,36 +1,24 @@
-make vertical navbar ( setting, darkmode, like) in components/ui folder , import in HomePageUi
+5. evtl. paar kleine css battles machen https://cssbattle.dev/play/111
+
+Now
+
+make make icons also in 
+neuer File für why blog
+scrollbar x hidden
+
+make make first wave white ( can be done ) in globals.csss
+i can also easily adjust height of wave ( globals.css)
+Zum Project
+
+große Schrift
+viele kleine Animationen
+viele typewriter
+passende Loading screens https://www.youtube.com/watch?v=NZNhuzyeD-Y
+wave section wie fireship, genereles layout wie
+
+Aufbau
+components > ui ( darkmode für posts)
+files für die Startseite ("/")
+in pages dann die ganzen pages als ein file ( + aus ui geimportete Sachen)
 
 
-fix hydration -> is in dropdown component
-
-add typewriter and animation ( w. framer motion)
-
-topics use css grid-template-areas mit animation ( von fireship), die haben das jeweilige Colorscheme
-
-
-
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-import {useState, useEffect} from "react"
-
-function MyApp({ Component, pageProps }: AppProps) {
-   const [showChild, setShowChild] = useState(false);
-  useEffect(() => {
-    setShowChild(true);
-  }, []);
-
-  if (!showChild) {
-    return null;
-  }
-
-  if (typeof window === 'undefined') {
-    return <></>;
-  } else {
-  return  (
-      <Component {...pageProps} />
-
-  )
-  }
-}
-
-export default MyApp
