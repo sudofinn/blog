@@ -2,9 +2,11 @@
 
 Now
 
-make make icons also in 
 neuer File für why blog
 scrollbar x hidden
+
+fix group ( if clicked on parent div, should go to webiste, not if only on )
+fix new ideas button ( table mode not good ) ( probalby do sth. w. h1 idk too sure)
 
 make make first wave white ( can be done ) in globals.csss
 i can also easily adjust height of wave ( globals.css)

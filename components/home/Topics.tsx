@@ -88,7 +88,7 @@ const Topics: React.FC  = () => {
   return (
     <section className="bubble relative ">
       
-      <div className="max-w-screen-lg mx-auto pt-[370px] flex flex-col justify-center text-center w-full h-full">
+      <div className="max-w-screen-lg mx-auto pt-[370px] mb-16 flex flex-col justify-center text-center w-full h-full">
         <div>
           <p className="  text-5xl sm:text-6xl  mt-32 text-white font-bold border-b-4 border-white p-2 inline">
             Topics
