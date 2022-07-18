@@ -30,7 +30,7 @@ const TinyImprov = () => {
               </button>
         </div>
           
-          <p className="text-black px-2 py-6 mb-16 max-w-lg text-2xl leading-[60px]">
+          <p className="text-black px-2 py-6 mb-16 max-w-lg text-2xl leading-[60px] ">
             I like the idea of getting slightly better everyday. Consistency, I think, is the most  important skill 
             one can ever have. That ´s why I think it is ok to only improve slighly each day. But you got to improve 
             every day.

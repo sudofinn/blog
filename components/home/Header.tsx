@@ -7,10 +7,17 @@ const Header : React.FC = () => {
     <div>
         <section className=" relative flex flex-col">
             
-                <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-8xl  font-bold  flex justify-center my-8'>A Tiny Improvement</h1>
+                <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-8xl header-animate font-bold  flex justify-center ml-6 my-8'>A Tiny Improvement</h1>
 
-                <p className="text-center px-8 sm:text-2xl font-quote ">...because daily improvements over time create stuning results</p>
-                <p className="text-center text-md my-4 sm:text-2xl ">-Robin S. Sharma</p>
+                <div className="typewriter flex justify-center">
+                  <p className="text-center text-sm sm:tracking-widest  px-8 sm:text-2xl font-quote ">...because daily improvements over time create stuning results </p>
+                </div>
+               
+               <div className="">
+                <p className="text-center my-8 text-md header-p-animate sm:text-2xl ">-Robin S. Sharma</p>
+
+               </div>
+
 
                 <Image className="flex justify-center  "  height={350}    src={WomenSittingHeader} alt="Women" />
                 

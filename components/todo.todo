@@ -2,8 +2,10 @@
 
 Now
 
-neuer File für why blog
 scrollbar x hidden
+
+viele verschiedene animationen machen ( airplane, kopfhöere usw , jeweils passende Animations 
+wenn mna auf der Topic Seite zu einer Subpage geht) https://www.youtube.com/watch?v=NZNhuzyeD-Y
 
 fix group ( if clicked on parent div, should go to webiste, not if only on )
 fix new ideas button ( table mode not good ) ( probalby do sth. w. h1 idk too sure)
@@ -16,7 +18,6 @@ große Schrift
 viele kleine Animationen
 viele typewriter
 passende Loading screens https://www.youtube.com/watch?v=NZNhuzyeD-Y
-wave section wie fireship, genereles layout wie
 
 Aufbau
 components > ui ( darkmode für posts)

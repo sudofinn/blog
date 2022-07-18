@@ -39,18 +39,25 @@ const FindMe = () => {
   return (
 
     
-    <section>
-        <div className="blob-content">
-            <h1 className="text-7xl mt-16 text-center ">Find me</h1>
-            <p className="text-2xl text-center mx-24 mt-8 ">I am not on as many social media platforms as the majority of 
+    <section className="relative">
+      <div className="custom-shape-divider-bottom-1658137204">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" className="shape-fill"></path>
+    </svg>
+</div>
+
+
+        <div className="">
+            <h1 className="text-7xl mt-48 text-center ">Find me</h1>
+            <p className="text-2xl text-center mx-24 my-12 ">I am not on as many social media platforms as the majority of 
                 society  but here are the ones I am active on.</p>
         </div>
 
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-16 text-center  text-black py-12 px-20 sm:px-8">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-16 text-center   py-12 px-20 sm:px-8">
           {techs.map(({ id, href, child, title, style }) => (
             <div
               key={id}
-              className={`shadow-md hover:scale-105 duration-500 py-2  rounded-lg ${style}`}
+              className={`shadow-md hover:scale-105 duration-500 py-2 text-black hover:text-white hover:bg-black  rounded-lg ${style}`}
             >
                <a href={href} target="_blank"
               rel="noreferrer"

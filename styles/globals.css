@@ -65,5 +65,70 @@
     background: url('./blobs.svg') no-repeat bottom / cover;
     }
 
+   /* from https://codepen.io/aw-kris/pen/bwVMEy */
+.typewriter p {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    /*border-right: .15em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    /*letter-spacing: .15em; /* Adjust as needed */ 
+    
+    animation: 
+        typing 4.5s steps(40, end);
+        
+    animation-delay:1s;
+    animation-fill-mode: both
+    
+}
+
+
+    /* The typing effect */
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+
+    /* The typewriter cursor effect */
+    /*@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+    }
+     */
+
+    .header-animate {
+        animation-duration: 1s;
+       animation-name: header-animation;
+    }
+    @keyframes header-animation {
+        0% {
+            scale:0
+        }
+    }
+
+    .header-p-animate {
+        animation-duration: 2s;
+       animation-name: header-p-animation;
+       animation-delay:4s;
+       animation-fill-mode: both
+    }
+
+    
+    @keyframes header-p-animation {
+        0% {
+            scale:0
+        }
+    }
+
+    .custom-shape-divider-bottom-1658137204 svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 250px;
+}
+
+
+
+    
+
 
 }

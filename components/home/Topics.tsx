@@ -80,7 +80,7 @@ const Topics: React.FC  = () => {
       ),
       href: "https://linkedin.com",
       title: "Climate change",
-      style: "shadow-white",
+      style: "shadow-white ",
     }
    
   ];
@@ -96,11 +96,12 @@ const Topics: React.FC  = () => {
           <p className="hidden md:flex justify-center py-8 text-2xl text-white ">Lets have a look at what I write</p>
         </div>
 
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-16 text-center text-white py-12 px-20 sm:px-8">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-16 text-center mb-8 py-12 px-20 sm:px-8">
           {techs.map(({ id, href, child, title, style }) => (
             <div
               key={id}
-              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+              className={`shadow-md hover:scale-105 duration-500 py-2 text-white hover:text-black
+               hover:bg-white rounded-lg ${style}`}
             >
                <a href={href} target="_blank"
               rel="noreferrer"
