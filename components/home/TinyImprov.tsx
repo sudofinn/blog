@@ -18,22 +18,22 @@ const TinyImprov = () => {
 
         <div className="max-w-screen-lg mx-auto mt-16 pt-24 flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className=" flex flex-col justify-center h-full">
-          <h2 className="text-5xl mb-8 text-center sm:text-7xl font-bold text-black mr-[16px]">
+          <h2  data-aos="fade-down" className="text-5xl mb-8 text-center sm:text-7xl hover:scale-110 duration-500 font-bold text-black mr-[16px]">
             A TINY Improvement
           </h2>
 
 
           <div className="float-left sm:flex mx-auto  sm:mx-4">
-            <button className="text-white   bg-black  hover:text-black hover:bg-white  
+            <button data-aos="flip-right" className="text-white   bg-black  hover:text-black hover:bg-white  
             flex items-center  max-w-lg px-8 py-4 my-8  rounded-md hover:scale-110 duration-300 ">
                 New Ideas
               </button>
         </div>
           
-          <p className="text-black px-2 py-6 mb-16 max-w-lg text-2xl leading-[60px] ">
+          <p data-aos="fade-down" className="text-black px-8 text-center sm:text-left sm:px-2 py-6 mb-16 max-w-lg text-2xl leading-[60px] ">
             I like the idea of getting slightly better everyday. Consistency, I think, is the most  important skill 
-            one can ever have. That ´s why I think it is ok to only improve slighly each day. But you got to improve 
-            every day.
+            one can ever have. That `s why I think it is ok to only improve slighly each day. But it `s incredibly 
+            important to  improve  every day.
           </p>
 
           

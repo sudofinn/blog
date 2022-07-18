@@ -7,10 +7,10 @@ const Header : React.FC = () => {
     <div>
         <section className=" relative flex flex-col">
             
-                <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-8xl header-animate font-bold  flex justify-center ml-6 my-8'>A Tiny Improvement</h1>
+                <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-8xl header-animate hover:scale-110 duration-500 font-bold  flex justify-center ml-6 my-8'>A Tiny Improvement</h1>
 
                 <div className="typewriter flex justify-center">
-                  <p className="text-center text-sm sm:tracking-widest  px-8 sm:text-2xl font-quote ">...because daily improvements over time create stuning results </p>
+                  <p className="text-center text-[18px] sm:tracking-widest  px-8 sm:text-2xl font-quote ">...because daily improvements over time create stuning results. </p>
                 </div>
                
                <div className="">
@@ -19,7 +19,7 @@ const Header : React.FC = () => {
                </div>
 
 
-                <Image className="flex justify-center  "  height={350}    src={WomenSittingHeader} alt="Women" />
+                <Image className="flex justify-center   "  height={350}    src={WomenSittingHeader} alt="Women" />
                 
                 
                 <div className="sm:mt-[300px] mt-[400px]">

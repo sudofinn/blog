@@ -9,6 +9,8 @@ wenn mna auf der Topic Seite zu einer Subpage geht) https://www.youtube.com/watc
 
 fix group ( if clicked on parent div, should go to webiste, not if only on )
 fix new ideas button ( table mode not good ) ( probalby do sth. w. h1 idk too sure)
+fix animatinon header ( tiny imporvemnt, robin sharma in edge, chrome not working -> maybe deploy and look if it functions, otherwise
+maybe use framer-motin instaed of regular css)
 
 make make first wave white ( can be done ) in globals.csss
 i can also easily adjust height of wave ( globals.css)

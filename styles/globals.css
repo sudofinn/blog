@@ -11,6 +11,32 @@
         font-family: "Ibarra Real Nova" , sans-serif;
         
 }
+   body {
+    overflow-x: hidden;
+    
+   }
+
+   /* Custom Scrollbar */
+/* edge, chrome */
+html::-webkit-scrollbar {
+      width: 0px; 
+    
+   }
+
+html::-webkit-scrollbar-track {
+    background-color: #000000;
+  }
+
+html::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 10px;
+  }
+
+  html {
+ 
+  scrollbar-color: #000000 #000000;
+  scrollbar-width: 0px;
+}
 }
 
 @layer components {
@@ -94,15 +120,23 @@
     50% { border-color: orange; }
     }
      */
+    
+
 
     .header-animate {
+        
         animation-duration: 1s;
        animation-name: header-animation;
     }
+    
     @keyframes header-animation {
-        0% {
-            scale:0
+        from {
+            scale:0%
         }
+        to {
+            scale:100%;
+        }
+
     }
 
     .header-p-animate {
@@ -115,9 +149,14 @@
     
     @keyframes header-p-animation {
         0% {
-            scale:0
+            scale:0%
+        }
+        100% {
+            scale:100%
         }
     }
+
+
 
     .custom-shape-divider-bottom-1658137204 svg {
     position: relative;

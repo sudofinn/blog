@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from "next/link"
 
-import KUTE from 'kute.js'
+//import KUTE from 'kute.js'
 
 import {AiFillGithub} from "react-icons/ai"
 import {TbWorld} from "react-icons/tb"
@@ -48,15 +48,16 @@ const FindMe = () => {
 
 
         <div className="">
-            <h1 className="text-7xl mt-48 text-center ">Find me</h1>
-            <p className="text-2xl text-center mx-24 my-12 ">I am not on as many social media platforms as the majority of 
-                society  but here are the ones I am active on.</p>
+            <h1 data-aos="zoom-in-down" className="text-7xl mt-48 text-center hover:scale-110 duration-500 ">Find me</h1>
+            <p  data-aos="zoom-in-down" className="text-2xl text-center mx-12 my-12 ">You can also take a look at  other website/platforms
+             I`m active on. </p>
         </div>
 
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-16 text-center   py-12 px-20 sm:px-8">
           {techs.map(({ id, href, child, title, style }) => (
             <div
               key={id}
+              data-aos="fade-up"
               className={`shadow-md hover:scale-105 duration-500 py-2 text-black hover:text-white hover:bg-black  rounded-lg ${style}`}
             >
                <a href={href} target="_blank"
