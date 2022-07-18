@@ -101,7 +101,7 @@ const Topics: React.FC  = () => {
           {techs.map(({ id, href, child, title, style }) => (
             <div
               key={id}
-              data-aos="fade-up"
+              
               className={`shadow-md hover:scale-105 duration-500 py-2 text-white hover:text-black
                hover:bg-white rounded-lg ${style}`}
             >

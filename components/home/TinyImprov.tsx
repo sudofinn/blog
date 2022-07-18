@@ -24,7 +24,7 @@ const TinyImprov = () => {
 
 
           <div className="float-left sm:flex mx-auto  sm:mx-4">
-            <button data-aos="flip-right" className="text-white   bg-black  hover:text-black hover:bg-white  
+            <button  className="text-white   bg-black  hover:text-black hover:bg-white  
             flex items-center  max-w-lg px-8 py-4 my-8  rounded-md hover:scale-110 duration-300 ">
                 New Ideas
               </button>

@@ -57,7 +57,7 @@ const FindMe = () => {
           {techs.map(({ id, href, child, title, style }) => (
             <div
               key={id}
-              data-aos="fade-up"
+              
               className={`shadow-md hover:scale-105 duration-500 py-2 text-black hover:text-white hover:bg-black  rounded-lg ${style}`}
             >
                <a href={href} target="_blank"
