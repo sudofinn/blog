@@ -58,7 +58,7 @@ const FindMe = () => {
             <div
               key={id}
               
-              className={`shadow-md hover:scale-105 duration-500 py-2 text-black hover:text-white hover:bg-black  rounded-lg ${style}`}
+              className={`shadow-md hover:scale-105 duration-500 py-2 mb-8 text-black hover:text-white hover:bg-black  rounded-lg ${style}`}
             >
                <a href={href} target="_blank"
               rel="noreferrer"

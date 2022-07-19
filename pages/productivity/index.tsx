@@ -72,7 +72,7 @@ const index = () => {
         </p>
       </div>
 
-     <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-16 text-center mb-8 py-12 px-20 sm:px-8">
+     <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-24 text-center mb-8 py-12 px-20 sm:px-8">
           {techs.map(({ id, href, child, title, style }) => (
             <div
               key={id}
