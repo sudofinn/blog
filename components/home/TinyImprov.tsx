@@ -1,10 +1,16 @@
 import React from 'react'
 import Image from "next/image"
+//import {useRouter} from "next/router"
 import LampDark from "../../assets/LampStandingDarkPrim.svg"
 
 const TinyImprov = () => {
-    // make black wave ( other direciton than first w. tool , like on figma file overall design)
-    //last section, do the animated kute bubble
+    //const router = useRouter()
+
+    const transferNewIdeaPage = () => {
+      window.open("/newidea")
+    }
+
+  
   return (
     <div className="h-full w-full bg-white">
 
@@ -24,7 +30,7 @@ const TinyImprov = () => {
 
 
           <div className="float-left sm:flex mx-auto  sm:mx-4">
-            <button  className="text-white   bg-black  hover:text-black hover:bg-white  
+            <button onClick={transferNewIdeaPage} className="text-white   bg-black  hover:text-black hover:bg-white  
             flex items-center  max-w-lg px-8 py-4 my-8  rounded-md hover:scale-110 duration-300 ">
                 New Ideas
               </button>

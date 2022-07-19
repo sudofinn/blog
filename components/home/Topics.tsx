@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from "next/link"
+import {useRouter} from "next/router"
 
 import {MdOutlineWork} from "react-icons/md"
 import {AiFillBook} from "react-icons/ai"
@@ -18,7 +19,7 @@ const Topics: React.FC  = () => {
            <MdOutlineWork size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "/productivity",
       title: "Productivity",
       style: "shadow-white",
     },
@@ -30,7 +31,7 @@ const Topics: React.FC  = () => {
            <AiFillBook size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "/books",
       title: "All about books",
       style: "shadow-white",
     },
@@ -41,7 +42,7 @@ const Topics: React.FC  = () => {
            <BsCodeSlash size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "/programming",
       src: BsCodeSlash,
       title: "Programming",
       style: "shadow-white",
@@ -54,7 +55,7 @@ const Topics: React.FC  = () => {
            <GiMeditation size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "/meditationpeace",
       title: "Meditation & Peace",
       style: "shadow-white",
     },
@@ -66,7 +67,7 @@ const Topics: React.FC  = () => {
            <IoMdChatbubbles size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "/whatithink",
       title: "Me and what I think",
       style: "shadow-white",
     },
@@ -78,14 +79,23 @@ const Topics: React.FC  = () => {
            <GiFlowerEmblem size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "/climatechange",
       title: "Climate change",
       style: "shadow-white ",
     }
    
   ];
+ 
+   /*
+  const router = useRouter() 
 
-  return (
+  const transferNewIdeaPage = () => {
+    router.push("/newidea")
+
+  }
+  */
+
+return (
     <section className="bubble relative ">
       
       <div className="max-w-screen-lg mx-auto pt-[370px] mb-16 flex flex-col justify-center text-center w-full h-full">
@@ -118,5 +128,6 @@ const Topics: React.FC  = () => {
 
   )
 }
+
 
 export default Topics

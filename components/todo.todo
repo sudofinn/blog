@@ -7,10 +7,15 @@ scrollbar x hidden
 viele verschiedene animationen machen ( airplane, kopfhöere usw , jeweils passende Animations 
 wenn mna auf der Topic Seite zu einer Subpage geht) https://www.youtube.com/watch?v=NZNhuzyeD-Y
 
+Homepage -> airplane animation
+Custom Animations für jede Topic Seite ( Buch fliegen für "All about books" Seite)
+gleiche Animation für jede Topic Unterseite nur mit passender Farbe ( passend zum colorscheme des articles)
+
+
 fix group ( if clicked on parent div, should go to webiste, not if only on )
 fix new ideas button ( table mode not good ) ( probalby do sth. w. h1 idk too sure)
 fix animatinon header ( tiny imporvemnt, robin sharma in edge, chrome not working -> maybe deploy and look if it functions, otherwise
-maybe use framer-motin instaed of regular css)
+maybe use framer-motin instaed of regular css) -> sometimes working, sometimes not
 
 
 
