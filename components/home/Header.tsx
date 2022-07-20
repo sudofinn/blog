@@ -6,15 +6,15 @@ const Header : React.FC = () => {
   return (
     <div>
         <section className=" relative flex flex-col ">
-            
-                <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-8xl header-animate hover:scale-110 duration-500 font-bold  text-center ml-6 my-8'>A Tiny Improvement</h1>
+
+                <h1  data-aos="fade-up" className='text-4xl sm:text-5xl md:text-6xl lg:text-8xl  hover:scale-110 duration-500 font-bold  text-center ml-6 my-8'>A Tiny Improvement</h1>
 
                 <div className="typewriter ">
                   <p className="text-center text-[15px] sm:tracking-widest px-2  sm:px-8 sm:text-2xl font-quote ">...because daily improvements over time create stuning results. </p>
                 </div>
                
                <div className="">
-                <p className="text-center my-8 text-md header-p-animate sm:text-2xl ">-Robin S. Sharma</p>
+                <p data-aos="fade-up" data-aos-delay="3000"  className="text-center my-8 text-md  sm:text-2xl ">-Robin S. Sharma</p>
 
                </div>
 

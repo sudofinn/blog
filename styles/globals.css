@@ -100,10 +100,12 @@
      */
     
 
+     /* not necessay, fixed w. aos 
+
 
     .header-animate {
         
-        animation-duration: 1s;
+    animation-duration: 1s;
        animation-name: header-animation;
     }
     
@@ -135,7 +137,7 @@
     }
 
 
-
+*/
    
 
 
