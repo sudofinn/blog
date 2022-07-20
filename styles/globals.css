@@ -9,34 +9,11 @@
 @layer base {
     html {
         font-family: "Ibarra Real Nova" , sans-serif;
+   
         
 }
-   body {
-    overflow-x: hidden;
-    
-   }
 
-   /* Custom Scrollbar */
-/* edge, chrome */
-html::-webkit-scrollbar {
-      width: 0px; 
-    
-   }
-
-html::-webkit-scrollbar-track {
-    background-color: #000000;
-  }
-
-html::-webkit-scrollbar-thumb {
-    background: #000000;
-    border-radius: 10px;
-  }
-
-  html {
- 
-  scrollbar-color: #000000 #000000;
-  scrollbar-width: 0px;
-}
+/* add scrollbar, overlow from github repo */
 }
 
 @layer components {
@@ -158,12 +135,7 @@ html::-webkit-scrollbar-thumb {
 
 
 
-    .custom-shape-divider-bottom-1658137204 svg {
-    position: relative;
-    display: block;
-    width: calc(130% + 1.3px);
-    height: 250px;
-}
+   
 
 
 

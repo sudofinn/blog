@@ -5,11 +5,11 @@ import WomenSittingHeader from "../../assets/WomenSittingHeaderPrim.svg"
 const Header : React.FC = () => {
   return (
     <div>
-        <section className=" relative flex flex-col">
+        <section className=" relative flex flex-col ">
             
-                <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-8xl header-animate hover:scale-110 duration-500 font-bold  flex justify-center ml-6 my-8'>A Tiny Improvement</h1>
+                <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-8xl header-animate hover:scale-110 duration-500 font-bold  text-center ml-6 my-8'>A Tiny Improvement</h1>
 
-                <div className="typewriter flex justify-center">
+                <div className="typewriter ">
                   <p className="text-center text-[18px] sm:tracking-widest  px-8 sm:text-2xl font-quote ">...because daily improvements over time create stuning results. </p>
                 </div>
                

@@ -6,7 +6,6 @@ scrollbar x hidden
 
 viele verschiedene animationen machen ( airplane, kopfhöere usw , jeweils passende Animations 
 wenn mna auf der Topic Seite zu einer Subpage geht) https://www.youtube.com/watch?v=NZNhuzyeD-Y
-
 Homepage -> airplane animation
 Custom Animations für jede Topic Seite ( Buch fliegen für "All about books" Seite)
 gleiche Animation für jede Topic Unterseite nur mit passender Farbe ( passend zum colorscheme des articles)
@@ -14,8 +13,22 @@ gleiche Animation für jede Topic Unterseite nur mit passender Farbe ( passend z
 
 fix group ( if clicked on parent div, should go to webiste, not if only on )
 fix new ideas button ( table mode not good ) ( probalby do sth. w. h1 idk too sure)
-fix animatinon header ( tiny imporvemnt, robin sharma in edge, chrome not working -> maybe deploy and look if it functions, otherwise
+fix animatinon header ( tiny imporvemnt, robin sharma in edge, chrome not working 
+-> maybe deploy and look if it functions, otherwise ( on mobile, does not go wider then 300 pixels)
+( BEI WHY BLOG UND FIND ME  BREAKT ES)
+
+
 maybe use framer-motin instaed of regular css) -> sometimes working, sometimes not
+
+make icon
+
+URGENT FIXES
+
+FIX MOBILE DEVICE CUTTING EDGES ( ON CHROME; GO TO DEVELOPER MODE  AND TO GO TOGGLE DEVICE TOOLBAR (ELEMENTS) UND DANN HANDY
+AUSWÄHLEN)
+
+FIX ANIMATION FOR HEADER NOT WORKING ( H1  AND ROBIN P TAG); NOT WORKING ON CHROME; EDGE 
+
 
 
 

@@ -9,6 +9,21 @@ import FindMe from '../components/home/FindMe'
 const Home: NextPage = () => {
   return (
     <div>
+    <Header />
+    <About />
+    <Topics />
+    <WhyBlog />
+    <TinyImprov />
+    <FindMe />
+    
+    
+
+    </div>
+  )
+}
+
+export default Home
+/*
       <Header />
       <About />
       <Topics />
@@ -16,8 +31,4 @@ const Home: NextPage = () => {
       <TinyImprov />
       <FindMe />
 
-    </div>
-  )
-}
-
-export default Home
+ */
