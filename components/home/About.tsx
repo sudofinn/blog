@@ -8,7 +8,7 @@ import React from 'react'
 const About: React.FC  = () => {
   return (
     <section>
-        <div data-aos="fade-right" className="flex flex-col  bg-black w-screen h-full  ">
+        <div data-aos="fade-left" className="flex flex-col  bg-black w-screen h-full  ">
             <h1 className="text-white text-6xl text-center hover:scale-110 duration-500  mb-8">About</h1>
             <p  className="text-white  text-2xl text-center mb-64 mx-16 sm:mx-48  leading-[60px]">Hi, my name is Finn and  I am a student from Germany.  
             I love writing and sharing my thoughts with other people, so I decided to make my own 
