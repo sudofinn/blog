@@ -10,7 +10,7 @@ const Header : React.FC = () => {
                 <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-8xl header-animate hover:scale-110 duration-500 font-bold  text-center ml-6 my-8'>A Tiny Improvement</h1>
 
                 <div className="typewriter ">
-                  <p className="text-center text-[18px] sm:tracking-widest  px-8 sm:text-2xl font-quote ">...because daily improvements over time create stuning results. </p>
+                  <p className="text-center text-[15px] sm:tracking-widest px-2  sm:px-8 sm:text-2xl font-quote ">...because daily improvements over time create stuning results. </p>
                 </div>
                
                <div className="">
