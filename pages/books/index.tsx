@@ -59,13 +59,13 @@ const index = () => {
 
 
   return (
-    <div className=" flex flex-col bg-black text-white justify-center text-center w-screen h-full">
+    <div className=" flex flex-col bg-white text-black justify-center text-center w-screen h-full">
       
       <div>
         <h1 data-aos="fade-up" className="text-6xl sm:text-7xl font-bold text-center pt-16 
          mb-16 ">Books</h1>
-        <p data-aos="fade-up" className="text-2xl  shadow-xl shadow-white leading-[70px]
-        text-center mb-16  mx-16 px-8 sm:mx-32 ">Here, we talk about books. You can find very detailed summaries
+        <p data-aos="fade-up" className="text-2xl  shadow-xl shadow-black leading-[70px]
+        text-center mb-24  mx-16 px-8 sm:mx-32 ">Here, we talk about books. You can find very detailed summaries
         of what I think are amongst the best books on the planet. Also, we distill reading
         in itself by looking at how reading can benefit us.
         This is a section for all book nerds and for all who want to 
@@ -77,14 +77,15 @@ const index = () => {
             <div
               key={id}
               
-              className={`shadow-md hover:scale-105 duration-500 py-2 text-white hover:text-black
-               hover:bg-white rounded-lg mx-4 px-2 sm:mx-16 ${style}`}
+              className={`shadow-md hover:scale-105 duration-500 py-2 bg-black text-white
+               hover:text-black
+               hover:bg-white rounded-lg mx-4 px-2  sm:mx-16 ${style}`}
             >
                <a href={href} target="_blank"
               rel="noreferrer"
               className='flex justify-center items-center'
               ><a>{child}</a></a>
-              <p className="mt-4 text-2xl">{title}</p>
+              <p className="mt-4 mb-4 text-2xl">{title}</p>
             </div>
           ))}
         </div>
