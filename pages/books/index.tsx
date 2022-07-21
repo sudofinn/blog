@@ -65,14 +65,14 @@ const index = () => {
         <h1 data-aos="fade-up" className="text-6xl sm:text-7xl font-bold text-center pt-16 
          mb-16 ">Books</h1>
         <p data-aos="fade-up" className="text-2xl  shadow-xl shadow-black leading-[50px] sm:leading-[70px]
-        text-center mb-24 py-8 mx-16 px-8 sm:mx-32 ">Here, we talk about books. You can find very detailed summaries
+        text-center mb-24 py-8 mx-16 px-8 sm:mx-48 ">Here, we talk about books. You can find very detailed summaries
         of what I think are amongst the best books on the planet. Also, we distill reading
         in itself by looking at how reading can benefit us.
         This is a section for all book nerds and for all who want to 
         become one.</p>
       </div>
 
-     <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-24 text-center mb-8  py-12 px-12 sm:px-20">
+     <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-24 text-center mb-8  py-12 px-12 sm:px-32">
           {techs.map(({ id, href, child, title, style }) => (
             <div
               key={id}
