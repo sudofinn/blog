@@ -19,7 +19,7 @@ const index = () => {
         <div className=" flex justify-center items-center">
 
           <form data-aos="fade-up"
-              action= "https://getform.io/f/e1b4940b-ffd6-466a-889d-08d3deaf029t8"
+              action= {process.env.NEXT_PUBLIC_KEY}
               method="POST"
             
             className=" flex flex-col w-full md:w-1/2"
