@@ -1,7 +1,6 @@
 import React from 'react'
 
 const index = () => {
-  const key = process.env.getFormKey
 
 
   return (
@@ -20,7 +19,7 @@ const index = () => {
         <div className=" flex justify-center items-center">
 
           <form data-aos="fade-up"
-              action= {process.env.NEXT_PUBLIC_KEY}
+              action= "https://getform.io/f/e1b4940b-ffd6-466a-889d-08d3deaf0298" 
               method="POST"
             
             className=" flex flex-col w-full md:w-1/2"
