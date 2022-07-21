@@ -5,7 +5,7 @@ const newidea = () => {
     <div>
       <div>
         <h1 className='text-5xl sm:text-7xl text-center mt-16 mx-12 '>A collection of ideas</h1>
-        <p className="text-center mt-12 text-2xl sm:px-32 mb-24  mx-16 sm:mx-32 px-8 py-8 shadow-md shadow-black">This is a collection of ideas for upcoming blogposts. Some might make it and become 
+        <p className="text-center mt-12 text-2xl sm:px-32 mb-24 leading-[50px]  mx-16 sm:mx-32 px-8 py-8 shadow-md shadow-black">This is a collection of ideas for upcoming blogposts. Some might make it and become 
           a full post while others stay as ideas. I just want to share with you what I am working on
           instead of only presenting the finished version which is what I usually see.
         </p>
