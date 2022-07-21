@@ -65,7 +65,7 @@ const index = () => {
         <h1 data-aos="fade-up" className="text-6xl sm:text-7xl font-bold text-center pt-16 
          mb-16 ">Books</h1>
         <p data-aos="fade-up" className="text-2xl  shadow-xl shadow-black leading-[50px] sm:leading-[70px]
-        text-center mb-24 py-8 mx-16 px-8 sm:mx-48 ">Here, we talk about books. You can find very detailed summaries
+        text-center mb-24 py-8 mx-8 px-4  sm:mx-48 ">Here, we talk about books. You can find very detailed summaries
         of what I think are amongst the best books on the planet. Also, we distill reading
         in itself by looking at how reading can benefit us.
         This is a section for all book nerds and for all who want to 
