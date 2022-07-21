@@ -34,9 +34,15 @@ const FindMe = () => {
       style:"shadow-black"
       }
    ]
+
+   const transferReachOutPage = () => {
+    window.open("/reachout")
+   }
     
 
   return (
+
+
 
     
     <section className="relative">
@@ -48,6 +54,13 @@ const FindMe = () => {
             <p  data-aos="zoom-in-down" className="text-2xl text-center mx-12 my-12 ">You can also take a look at  other website/platforms
              I`m active on. </p>
         </div>
+       
+       <div className='flex justify-center items-center'>
+          <button onClick={transferReachOutPage}  className="text-white   bg-black  hover:text-black hover:bg-white  
+              flex items-center  max-w-lg px-12 py-6 my-8 text-2xl  rounded-md hover:scale-110 duration-300 ">
+                  Reach out
+          </button>
+       </div>
 
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-16 text-center   py-12 px-20 sm:px-8">
           {techs.map(({ id, href, child, title, style }) => (

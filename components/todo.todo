@@ -15,14 +15,8 @@ fix group ( if clicked on parent div, should go to webiste, not if only on )
 fix new ideas button ( table mode not good ) ( probalby do sth. w. h1 idk too sure)
 
 Cutting edges fixed
--> typewriter visible on all except mobile phone w. firefox
+-> everything visible except typewriter firefox mobile app
 
-FIX ANIMATION HEADER ( H1 AND P  ONLY SOMEWHERE VISIBLE); USE TAIILWIND CSS OR FRAMER MOTION
- ( ON CHROME LAPTOP NOT WORKING; GODO 
-FOX FIXING)
-
-FIX ANIMATION ON SCROLL NOT WORKING ( MAYBE TRY USING AOS ONLY ON SPECIFIC THINGS WHERE IT WORKDS OR USE COMPLETELY
-DIFFERNET ANINMATION LIRBRARY OR DO IT YOURLSEF W: INTERSECTION API)
 
 
 
@@ -47,7 +41,10 @@ components > ui ( darkmode für posts)
 
 
 Code Snippets
+
+
 -> whyblog data aos
+
 import React from 'react'
 import Image from "next/image"
 
