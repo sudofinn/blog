@@ -17,7 +17,7 @@ const index = () => {
       ),
       href: "https://linkedin.com",
       title: "Apps I use everyday",
-      style: "shadow-white",
+      style: "shadow-black",
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ const index = () => {
       ),
       href: "https://linkedin.com",
       title: "Hustle or chill ?",
-      style: "shadow-white",
+      style: "shadow-black",
     },
     {
       id: 3,
@@ -41,7 +41,7 @@ const index = () => {
       href: "https://linkedin.com",
       src: BsCodeSlash,
       title: "Is daily writing important ?",
-      style: "shadow-white",
+      style: "shadow-black",
     },
     {
       id: 4,
@@ -53,7 +53,7 @@ const index = () => {
       ),
       href: "https://linkedin.com",
       title: "About following your passion",
-      style: "shadow-white",
+      style: "shadow-black",
     },
   ]
 

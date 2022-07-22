@@ -17,7 +17,7 @@ const index = () => {
       ),
       href: "https://linkedin.com",
       title: "Simon Sinek - Start with why",
-      style: "shadow-white",
+      style: "shadow-black",
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ const index = () => {
       ),
       href: "https://linkedin.com",
       title: "Jordan Peterson - 12 Rules for life",
-      style: "shadow-white",
+      style: "shadow-black",
     },
     {
       id: 3,
@@ -41,7 +41,7 @@ const index = () => {
       href: "https://linkedin.com",
       src: BsCodeSlash,
       title: "How writing affects your brain",
-      style: "shadow-white",
+      style: "shadow-black",
     },
     {
       id: 4,
@@ -53,7 +53,7 @@ const index = () => {
       ),
       href: "https://linkedin.com",
       title: "Writin your own book is a great idea.",
-      style: "shadow-white",
+      style: "shadow-black",
     },
   ]
 

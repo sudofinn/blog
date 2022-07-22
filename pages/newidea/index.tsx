@@ -6,25 +6,20 @@ const newidea = () => {
       id: 1,
       href: "/",
       title: "Linux Setup w. WSL2",
-      style: "shadow-white",
+      style: "shadow-black",
     },
     {
       id: 2,
       href: "/",
       title: "Dalai Lama - Our only home summary",
-      style: "shadow-white",
+      style: "shadow-black",
     },
+   
     {
       id: 3,
       href: "/",
-      title: "Climate change and its consequences",
-      style: "shadow-white",
-    },
-    {
-      id: 4,
-      href: "/",
       title: "Simon Sinek - Start with why",
-      style: "shadow-white",
+      style: "shadow-black",
     }
    
   ];
@@ -44,7 +39,8 @@ const newidea = () => {
             <div
               key={id}
               
-              className={"text-center rounded-lg  sm:mx-8 px-4 py-8 text-white bg-black  hover:text-black hover:bg-white "}
+              className={`text-center hover:scale-105 duration-500 shadow-md rounded-lg  sm:mx-8 px-4 py-8
+               text-white bg-black  hover:text-black hover:bg-white ${style} `}
             >
                <a href={href} target="_blank"
               rel="noreferrer"
