@@ -57,7 +57,7 @@ const FindMe = () => {
        
        <div className='flex justify-center items-center'>
           <button onClick={transferReachOutPage}  className="text-white   bg-black  hover:text-black hover:bg-white  
-              flex items-center  max-w-lg px-12 py-6 my-8 text-2xl  rounded-md hover:scale-110 duration-300 ">
+              flex items-center hover:shadow-md hover:shadow-black  max-w-lg px-12 py-6 my-8 text-2xl  rounded-md hover:scale-110 duration-300 ">
                   Reach out
           </button>
        </div>
