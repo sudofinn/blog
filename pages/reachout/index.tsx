@@ -55,7 +55,7 @@ const Index = () => {
             <textarea
               name="message"
               placeholder="Enter your message"
-              rows={10}
+              rows={9}
               className="p-2 bg-transparent border-2 rounded-md dark:border-black text-white focus:outline-none"
             ></textarea>
 
