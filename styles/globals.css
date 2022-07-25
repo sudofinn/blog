@@ -92,53 +92,8 @@
         to { width: 100% }
     }
 
-    /* The typewriter cursor effect */
-    /*@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-    }
-     */
-    
-
-     /* not necessay, fixed w. aos 
 
 
-    .header-animate {
-        
-    animation-duration: 1s;
-       animation-name: header-animation;
-    }
-    
-    @keyframes header-animation {
-        from {
-            scale:0%
-        }
-        to {
-            scale:100%;
-        }
-
-    }
-
-    .header-p-animate {
-        animation-duration: 2s;
-       animation-name: header-p-animation;
-       animation-delay:4s;
-       animation-fill-mode: both
-    }
-
-    
-    @keyframes header-p-animation {
-        0% {
-            scale:0%
-        }
-        100% {
-            scale:100%
-        }
-    }
-
-
-*/
-   
 
 
 

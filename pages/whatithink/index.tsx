@@ -1,12 +1,21 @@
 import React from 'react'
 import Link from "next/link"
+import useDarkMode from '../../components/hooks/useDarkMode'
 
 import {MdOutlineWork} from "react-icons/md"
 import {AiFillBook} from "react-icons/ai"
 import{BsCodeSlash} from "react-icons/bs"
 import { GiMeditation} from "react-icons/gi"
 
-const index = () => {
+import {
+  FaMoon,
+  FaSun,
+} from 'react-icons/fa';
+
+const Index = () => {
+  const [darkTheme, setDarkTheme] = useDarkMode();
+  const handleMode = () => setDarkTheme(!darkTheme);
+
   const techs = [
     {
       id: 1,
@@ -17,7 +26,7 @@ const index = () => {
       ),
       href: "https://linkedin.com",
       title: "Why does everybody hate what they are doing ?",
-      style: "shadow-black",
+      style: "shadow-black dark:shadow-white",
     },
     {
       id: 2,
@@ -29,7 +38,7 @@ const index = () => {
       ),
       href: "https://linkedin.com",
       title: "What makes a 'good life' ?",
-      style: "shadow-black",
+      style: "shadow-black dark:shadow-white",
     },
     {
       id: 3,
@@ -41,7 +50,7 @@ const index = () => {
       href: "https://linkedin.com",
       src: BsCodeSlash,
       title: "The fear of staying average",
-      style: "shadow-black",
+      style: "shadow-black dark:shadow-white",
     },
     {
       id: 4,
@@ -53,18 +62,27 @@ const index = () => {
       ),
       href: "https://linkedin.com",
       title: "Quit or continue ? ",
-      style: "shadow-black",
+      style: "shadow-black dark:shadow-white",
     },
   ]
 
 
   return (
-    <div className=" flex flex-col bg-white text-black justify-center text-center w-screen h-full">
+    <div className=" dark:bg-black dark:text-white flex flex-col bg-white text-black justify-center text-center w-screen h-full">
       
       <div>
         <h1 data-aos="fade-up" className="text-6xl sm:text-7xl font-bold text-center pt-16 
          mb-16 ">Me and what I think</h1>
-        <p data-aos="fade-up" className="text-2xl  shadow-xl shadow-black leading-[50px] sm:leading-[70px]
+
+          <span onClick={handleMode} className="flex justify-center mb-12 hover:scale-110 duration-500">
+        {darkTheme ? (
+          <FaSun size='40' className='top-navigation-icon' />
+        ) : (
+          <FaMoon size='40' className='top-navigation-icon' />
+        )}
+      </span>
+
+        <p data-aos="fade-up" className="text-2xl dark:shadow-white shadow-xl shadow-black leading-[50px] sm:leading-[70px]
         text-center mb-24 py-8 mx-8 px-4  sm:mx-48 ">This is somewhat more of a direct chapter, here I talk solely 
         about what I think of certain technologies/trends etc. Furthermore, I also talk about myself a bit more and give
          you an insight of what my life looks like..</p>
@@ -93,4 +111,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index

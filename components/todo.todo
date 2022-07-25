@@ -21,6 +21,11 @@ text-center mx-2 sm:mx-8 px-4 py-8 text-white bg-black  hover:text-black hover:b
 
 
 make icon
+make keywords
+-> both of these are possible in next js due to meta tags/kewords ( academind next js project and/or accoridng
+notion page you find how to do this))
+
+
 make scrollbar again ( be cautious of this changes something for the app)
 make overflow-x:hidden ( be cautious of this changes something for the app) ( SHOULD WORK)
 make reach out page ( give email or make contact form like yash patel vid tailwind react -> works too)

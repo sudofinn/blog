@@ -23,12 +23,3 @@ const Home: NextPage = () => {
 }
 
 export default Home
-/*
-      <Header />
-      <About />
-      <Topics />
-      <WhyBlog />
-      <TinyImprov />
-      <FindMe />
-
- */

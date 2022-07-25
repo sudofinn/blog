@@ -1,12 +1,22 @@
 import React from 'react'
 import Link from "next/link"
+import useDarkMode from '../../components/hooks/useDarkMode'
 
 import {MdOutlineWork} from "react-icons/md"
 import {AiFillBook} from "react-icons/ai"
 import{BsCodeSlash} from "react-icons/bs"
 import { GiMeditation} from "react-icons/gi"
 
-const index = () => {
+import {
+  FaMoon,
+  FaSun,
+} from 'react-icons/fa';
+
+
+const Index = () => {
+  const [darkTheme, setDarkTheme] = useDarkMode();
+  const handleMode = () => setDarkTheme(!darkTheme);
+
   const techs = [
     {
       id: 1,
@@ -17,7 +27,7 @@ const index = () => {
       ),
       href: "https://linkedin.com",
       title: "Simon Sinek - Start with why",
-      style: "shadow-black",
+      style: "shadow-black dark:shadow-white",
     },
     {
       id: 2,
@@ -29,7 +39,7 @@ const index = () => {
       ),
       href: "https://linkedin.com",
       title: "Jordan Peterson - 12 Rules for life",
-      style: "shadow-black",
+      style: "shadow-black dark:shadow-white",
     },
     {
       id: 3,
@@ -41,7 +51,7 @@ const index = () => {
       href: "https://linkedin.com",
       src: BsCodeSlash,
       title: "How writing affects your brain",
-      style: "shadow-black",
+      style: "shadow-black dark:shadow-white",
     },
     {
       id: 4,
@@ -53,18 +63,27 @@ const index = () => {
       ),
       href: "https://linkedin.com",
       title: "Writin your own book is a great idea.",
-      style: "shadow-black",
+      style: "shadow-black dark:shadow-white",
     },
   ]
 
 
   return (
-    <div className=" flex flex-col bg-white text-black justify-center text-center w-screen h-full">
+    <div className=" dark:bg-black dark:text-white flex flex-col bg-white text-black justify-center text-center w-screen h-full">
       
       <div>
         <h1 data-aos="fade-up" className="text-6xl sm:text-7xl font-bold text-center pt-16 
          mb-16 ">Books</h1>
-        <p data-aos="fade-up" className="text-2xl  shadow-xl shadow-black leading-[50px] sm:leading-[70px]
+
+          <span onClick={handleMode} className="flex justify-center mb-12 hover:scale-110 duration-500">
+        {darkTheme ? (
+          <FaSun size='40' className='top-navigation-icon' />
+        ) : (
+          <FaMoon size='40' className='top-navigation-icon' />
+        )}
+      </span>
+
+        <p data-aos="fade-up" className="text-2xl dark:shadow-white  shadow-xl shadow-black leading-[50px] sm:leading-[70px]
         text-center mb-24 py-8 mx-8 px-4  sm:mx-48 ">Here, we talk about books. You can find very detailed summaries
         of what I think are amongst the best books on the planet. Also, we distill reading
         in itself by looking at how reading can benefit us.
@@ -77,7 +96,7 @@ const index = () => {
             <div
               key={id}
               
-              className={`shadow-md hover:scale-105 duration-500 py-4 bg-black text-white
+              className={`shadow-md  hover:scale-105 duration-500 py-4 bg-black text-white
                hover:text-black
                hover:bg-white rounded-lg mx-4 px-2  sm:mx-16 ${style}`}
             >
@@ -95,4 +114,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index

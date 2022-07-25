@@ -1,19 +1,35 @@
 import React from 'react'
+import useDarkMode from '../../components/hooks/useDarkMode';
 
-const index = () => {
+
+import {
+  FaMoon,
+  FaSun,
+} from 'react-icons/fa';
+
+const Index = () => {
+  const [darkTheme, setDarkTheme] = useDarkMode();
+  const handleMode = () => setDarkTheme(!darkTheme);
 
 
   return (
     <div
       
-      className="w-full h-screen bg-black p-4 text-white"
+      className="w-full h-screen dark:bg-white dark:text-black bg-black p-4 text-white"
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8  ">
-          <p data-aos="fade-up" className="text-7xl font-bold text-center mt-4 mb-4 ">
+          <p data-aos="fade-up" className="text-7xl font-bold text-center mt-8 mb-4 ">
             Contact
           </p>
           <p  data-aos="fade-up" className="py-6 text-2xl text-center ">Submit the form below to get in touch with me</p>
+          <span onClick={handleMode} className="flex justify-center mb-2 hover:scale-110 duration-500">
+        {darkTheme ? (
+          <FaSun size='30' className='top-navigation-icon' />
+        ) : (
+          <FaMoon size='30' className='top-navigation-icon' />
+        )}
+      </span>
         </div>
 
         <div className=" flex justify-center items-center">
@@ -28,22 +44,23 @@ const index = () => {
               type="text"
               name="name"
               placeholder="Enter your name"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="p-2 bg-transparent border-2 dark:border-black rounded-md text-white focus:outline-none"
             />
             <input
               type="text"
               name="email"
               placeholder="Enter your email"
-              className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="my-4 p-2 bg-transparent border-2  dark:border-black rounded-md text-white focus:outline-none"
             />
             <textarea
               name="message"
               placeholder="Enter your message"
               rows={10}
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="p-2 bg-transparent border-2 rounded-md dark:border-black text-white focus:outline-none"
             ></textarea>
 
-            <button className="text-black bg-white hover:bg-black hover:text-white px-8 py-4 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
+            <button className="text-black bg-white dark:bg-black dark:text-white hover:bg-black hover:text-white px-8 py-4
+             my-8 mx-auto flex  items-center rounded-md hover:scale-110 duration-300">
               Let us talk
             </button>
           </form>
@@ -53,4 +70,4 @@ const index = () => {
   );
 }
 
-export default index
+export default Index
