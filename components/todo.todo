@@ -1,180 +1,23 @@
 5. evtl. paar kleine css battles machen https://cssbattle.dev/play/111
 
 Now
-
-
-
-viele verschiedene animationen machen ( airplane, kopfhöere usw , jeweils passende Animations 
-wenn mna auf der Topic Seite zu einer Subpage geht) https://www.youtube.com/watch?v=NZNhuzyeD-Y
-Homepage -> airplane animation
-Custom Animations für jede Topic Seite ( Buch fliegen für "All about books" Seite)
-gleiche Animation für jede Topic Unterseite nur mit passender Farbe ( passend zum colorscheme des articles)
-
-
-fix group ( if clicked on parent div, should go to webiste, not if only on )
-fix new ideas button ( table mode not good ) ( probalby do sth. w. h1 idk too sure)
-
-Cutting edges fixed
--> everything visible except typewriter firefox mobile app
-
-text-center mx-2 sm:mx-8 px-4 py-8 text-white bg-black  hover:text-black hover:bg-white
-
-
-make icon
-make keywords
+make icon ( in figma just ati in great vibes font)
+make keywords ( for good seo ) -> also so that there is not the link in the head but rather a suitable title
 -> both of these are possible in next js due to meta tags/kewords ( academind next js project and/or accoridng
 notion page you find how to do this))
 
-
-make scrollbar again ( be cautious of this changes something for the app)
-make overflow-x:hidden ( be cautious of this changes something for the app) ( SHOULD WORK)
-make reach out page ( give email or make contact form like yash patel vid tailwind react -> works too)
+Next day
+make first posts ( w. good colorscheme, graphics in the colorscheme, darkmode implementation)
 
 
 
 
-i can also easily adjust height of wave ( globals.css)
-Zum Project
-
-
-passende Loading screens https://www.youtube.com/watch?v=NZNhuzyeD-Y
-
-Aufbau
-components > ui ( darkmode für posts)
+fix group ( if clicked on parent div, should go to webiste, not if only on )
 
 
 
-
-Code Snippets
-
-
--> whyblog data aos
-
-import React from 'react'
-import Image from "next/image"
-
-import ManStanding from "../../assets/ManStandingWhyBlogPrim.svg"
-
-const WhyBlog: React.FC = () => {
-  return (
-    <div>
-        <div className='flex flex-col '>
-            <h1 className="text-5xl  hover:scale-110 duration-500 text-center mt-32">Why creating a blog?</h1>
-            <p  className="text-black  text-2xl text-center mb-12 mt-8 mx-16 sm:mx-48 leading-[60px]">I generally love   having something on the internet where
-                 people can get value from. It might not be a lot since I am not even close to
-                  being an expert at anything I talk about. However, I still believe that it 
-                  is worth it and maybe it will even help somebody.    </p>
-            <Image className=" " src={ManStanding} alt="Man Standing" />
-        </div>
-    </div>
-  )
-}
-
-export default WhyBlog
+make scrollbar again ( be cautious of this changes something for the app),make overflow-x:hidden
+ ( be cautious of this changes something for the app) ( SHOULD WORK)
 
 
 
-
--> productivity index.tsx
-
-import React from 'react'
-import Link from "next/link"
-
-import {MdOutlineWork} from "react-icons/md"
-import {AiFillBook} from "react-icons/ai"
-import{BsCodeSlash} from "react-icons/bs"
-import { GiMeditation} from "react-icons/gi"
-
-const index = () => {
-  const techs = [
-    {
-      id: 1,
-      child  : (
-        <>
-           <MdOutlineWork size={30} />
-        </>
-      ),
-      href: "https://linkedin.com",
-      title: "Apps I use everyday",
-      style: "shadow-white",
-    },
-    {
-      id: 2,
-      src: AiFillBook,
-      child  : (
-        <>
-           <AiFillBook size={30} />
-        </>
-      ),
-      href: "https://linkedin.com",
-      title: "Hustle or chill ?",
-      style: "shadow-white",
-    },
-    {
-      id: 3,
-      child  : (
-        <>
-           <BsCodeSlash size={30} />
-        </>
-      ),
-      href: "https://linkedin.com",
-      src: BsCodeSlash,
-      title: "Is daily writing important ?",
-      style: "shadow-white",
-    },
-    {
-      id: 4,
-      src: GiMeditation,
-      child  : (
-        <>
-           <GiMeditation size={30} />
-        </>
-      ),
-      href: "https://linkedin.com",
-      title: "About following your passion",
-      style: "shadow-white",
-    },
-  ]
-
-
-  return (
-    <div className="   flex flex-col bg-black text-white justify-center text-center w-screen h-full">
-      
-      <div>
-        <h1 data-aos="fade-up" className="text-6xl sm:text-7xl font-bold text-center pt-16 
-         mb-16 ">Productivity</h1>
-        <p data-aos="fade-up" className="text-2xl  shadow-xl shadow-white leading-[70px]
-        text-center mb-16  mx-16 px-8 sm:mx-32 ">This section is dedicated to all the stuff around Productivity. 
-          I talk about what I ( and what science ) thinks is important to do for living 
-          productively. This covers a wide range from useful apps to deep questions
-          like whether one should hustle or chill. Enjoy reading.
-        </p>
-      </div>
-
-     <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-24 text-center mb-8 py-12 px-20 sm:px-8">
-          {techs.map(({ id, href, child, title, style }) => (
-            <div
-              key={id}
-              
-              className={`shadow-md hover:scale-105 duration-500 py-2 text-white hover:text-black
-               hover:bg-white rounded-lg mx-4 px-2 sm:mx-16 ${style}`}
-            >
-               <a href={href} target="_blank"
-              rel="noreferrer"
-              className='flex justify-center items-center'
-              ><a>{child}</a></a>
-              <p className="mt-4 text-2xl">{title}</p>
-            </div>
-          ))}
-        </div>
-      
-      <div>
-      </div>
-
-
-    </div>
-
-  )
-}
-
-export default index

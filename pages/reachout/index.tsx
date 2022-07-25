@@ -60,7 +60,7 @@ const Index = () => {
             ></textarea>
 
             <button className="text-black bg-white dark:bg-black dark:text-white hover:bg-black hover:text-white px-8 py-4
-             my-8 mx-auto flex  items-center rounded-md hover:scale-110 duration-300">
+             my-8 mx-auto flex  items-center rounded-md hover:scale-110 duration-300 mb-16">
               Let us talk
             </button>
           </form>
