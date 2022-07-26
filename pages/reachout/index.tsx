@@ -59,7 +59,7 @@ const Index = () => {
               className="p-2 bg-transparent border-2 rounded-md dark:border-black text-white focus:outline-none"
             ></textarea>
 
-            <button className="text-black bg-white dark:bg-black dark:text-white hover:bg-black hover:text-white px-8 py-4
+            <button className="text-black shadow-md hover:shadow-white bg-white dark:bg-black dark:text-white hover:bg-black hover:text-white px-8 py-4
              my-8 mx-auto flex  items-center rounded-md hover:scale-110 duration-300 mb-8">
               Let us talk
             </button>
