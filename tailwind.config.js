@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {},
      fontFamily: {
-      quote: ['Edu VIC WA NT Beginner']
+      quote: ['Edu VIC WA NT Beginner'],
+      blog: ['Raleway'],
     }
   },
   plugins: [],

@@ -18,6 +18,7 @@ fix group ( if clicked on parent div, should go to webiste, not if only on )
 
 make scrollbar again ( be cautious of this changes something for the app),make overflow-x:hidden
  ( be cautious of this changes something for the app) ( SHOULD WORK)
+use ::selection to make specific color when highlighting text ( not that ugly blue)
 
 
 

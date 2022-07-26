@@ -24,7 +24,7 @@ const Index = () => {
            <MdOutlineWork size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "/productivity/appsiuseeveryday",
       title: "Apps I use everyday",
       style: "shadow-black dark:shadow-white",
     },
@@ -36,7 +36,7 @@ const Index = () => {
            <AiFillBook size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "/productivity/hustleorchill",
       title: "Hustle or chill ?",
       style: "shadow-black dark:shadow-white",
     },
@@ -47,7 +47,7 @@ const Index = () => {
            <BsCodeSlash size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "/productivity/isdailywritingimportant",
       src: BsCodeSlash,
       title: "Is daily writing important ?",
       style: "shadow-black dark:shadow-white",
@@ -60,7 +60,7 @@ const Index = () => {
            <GiMeditation size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "/productivity/aboutfollowingyourpassion",
       title: "About following your passion",
       style: "shadow-black dark:shadow-white",
     },
