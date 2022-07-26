@@ -124,7 +124,7 @@ Anki uses spaced repitition and active recall to provide you with the greatest l
      be working    in the first place.</p>
 
 
-    <p className="text-orange-300  text-2xl mt-12 font-quote    px-6 sm:px-64 dark:text-black leading-[50px]">
+    <p className="text-orange-300 dark:text-orange-300  text-2xl mt-12 font-quote    px-6 sm:px-64 dark:text-black leading-[50px]">
       Thanks for reading! Maybe, this was a tiny improvement to your day.</p>
 
      
