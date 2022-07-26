@@ -13,8 +13,8 @@ const AppsEveryday = () => {
   //this page has a yellow colorscheme
 
   return (
-    <div className="w-full h-full px-6 dark:bg-white dark:text-orange-400 bg-black p-4 text-orange-400">
-      <h1 data-aos="fade-up"  className="text-center  text-8xl mt-12 mb-16 ">Apps I use Everyday</h1>
+    <div className="w-full h-full px-6  dark:bg-white dark:text-orange-400 bg-black  text-orange-400">
+      <h1 data-aos="fade-up"  className="text-center  pt-12 text-7xl  mb-16 ">Apps I use Everyday</h1>
 
       <span onClick={handleMode} className="flex justify-center mb-12 hover:scale-110 duration-500">
         {darkTheme ? (
@@ -24,7 +24,7 @@ const AppsEveryday = () => {
         )}
       </span>
       
-      <div className="border-l  ">
+      <div className="border-l dark:border-black ">
       <p className="text-white text-2xl px-6 font-blog  sm:px-64  dark:text-black leading-[50px] ">
     Apps have become so important to our everyday life. We simply can not life without them.
     And I am not even talking about  sth like <span className="text-orange-300">TikTok</span> or
