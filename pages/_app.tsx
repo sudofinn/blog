@@ -6,7 +6,6 @@ import AOS from "aos";
 import  Head from "next/head"
 
 
-import Favicon from '../components/Flavicon';
 import "aos/dist/aos.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -37,6 +36,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
         <Head>
          <link rel="shortcut icon" href="/favicon.svg" /> 
+         
           </Head>
 
 
