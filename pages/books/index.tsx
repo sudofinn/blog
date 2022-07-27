@@ -25,7 +25,7 @@ const Index = () => {
            <MdOutlineWork size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "/books/sinekstartwithwhy",
       title: "Simon Sinek - Start with why",
       style: "shadow-black dark:shadow-white",
     },
