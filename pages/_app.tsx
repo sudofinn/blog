@@ -3,7 +3,10 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import {useState, useEffect} from "react"
 import AOS from "aos";
+import  Head from "next/head"
 
+
+import Favicon from '../components/Flavicon';
 import "aos/dist/aos.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -29,8 +32,16 @@ function MyApp({ Component, pageProps }: AppProps) {
   } else {
   return  (
     
-    
+    <div>
       <Component {...pageProps} />
+
+        <Head>
+         <link rel="shortcut icon" href="/favicon.svg" /> 
+          </Head>
+
+
+    </div>
+    
 
   )
   }

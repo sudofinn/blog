@@ -10,11 +10,31 @@
 @layer base {
     html {
         font-family: "Ibarra Real Nova" , sans-serif;
-   
+         scrollbar-color: #ffffff #000000;
+      scrollbar-width: thin;
+
         
 }
 
-/* add scrollbar, overlow from github repo */
+body {
+  overflow-x: hidden;
+}
+
+
+html::-webkit-scrollbar {
+      width: 10px; 
+    
+   }
+
+html::-webkit-scrollbar-track {
+    background-color: #000000;
+  }
+
+html::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 25px;
+  }
+
  
 }
 
