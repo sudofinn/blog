@@ -7,15 +7,14 @@ import {
   FaSun,
 } from 'react-icons/fa';
 
-const Aboutfollowingyourpassion = () => {
+const WhyDoesEarthGetHotter = () => {
   const [darkTheme, setDarkTheme] = useDarkMode();
   const handleMode = () => setDarkTheme(!darkTheme);
 
   const router = useRouter()
   const navigatePrev = () => {
-    router.push("/productivity")
+    router.push("/climatechange")
   }
-  //add metatags
 
   return (
     <div className="w-full h-screen px-6 dark:bg-white dark:text-black bg-black p-4 text-white">
@@ -39,4 +38,4 @@ const Aboutfollowingyourpassion = () => {
   )
 }
 
-export default Aboutfollowingyourpassion
+export default WhyDoesEarthGetHotter

@@ -1,4 +1,6 @@
 import React from 'react'
+import Head from "next/head"
+
 import useDarkMode from '../../components/hooks/useDarkMode'
 
 
@@ -56,6 +58,12 @@ const Newidea = () => {
   
   return (
     <div className="  dark:bg-black dark:text-white  flex flex-col bg-white text-black justify-center text-center w-screen h-full">
+
+    <Head>
+      <title>New ideas</title>
+      <meta name="description" content="New ideas , a subsection from the blog A Tiny Improvement. Made by Finn Guha." />
+
+    </Head>
 
       
 

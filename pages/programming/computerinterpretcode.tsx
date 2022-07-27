@@ -1,3 +1,4 @@
+
 import React from 'react'
 import useDarkMode from '../../components/hooks/useDarkMode'
 import {useRouter} from "next/router"
@@ -7,15 +8,16 @@ import {
   FaSun,
 } from 'react-icons/fa';
 
-const Aboutfollowingyourpassion = () => {
+const ComputerInterpretCode = () => {
   const [darkTheme, setDarkTheme] = useDarkMode();
   const handleMode = () => setDarkTheme(!darkTheme);
 
   const router = useRouter()
   const navigatePrev = () => {
-    router.push("/productivity")
+    router.push("/programming")
   }
-  //add metatags
+
+  //use metatags
 
   return (
     <div className="w-full h-screen px-6 dark:bg-white dark:text-black bg-black p-4 text-white">
@@ -39,4 +41,4 @@ const Aboutfollowingyourpassion = () => {
   )
 }
 
-export default Aboutfollowingyourpassion
+export default ComputerInterpretCode

@@ -1,4 +1,6 @@
 import React from 'react'
+import Head from "next/head"
+
 import useDarkMode from '../components/hooks/useDarkMode'
 import { useRouter } from 'next/router';
 
@@ -21,6 +23,12 @@ const Custom404 = () => {
 
   return (
     <div className="w-full h-screen px-6 dark:bg-white dark:text-black bg-black p-4 text-white">
+
+    <Head>
+      <title>404 page</title>
+      <meta name="description" content="The 404 page,an  unexisting page from the blog A Tiny Improvement. Made by Finn Guha." />
+
+    </Head>
         <h1 data-aos="fade-up" className="text-center text-7xl mb-16 mt-16">Oops, page not found !</h1>
 
         <span onClick={handleMode} className="flex justify-center mb-16 hover:scale-110 duration-500">

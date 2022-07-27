@@ -7,14 +7,15 @@ import {
   FaSun,
 } from 'react-icons/fa';
 
-const Aboutfollowingyourpassion = () => {
+const HistoryOfMeditation = () => {
   const [darkTheme, setDarkTheme] = useDarkMode();
   const handleMode = () => setDarkTheme(!darkTheme);
 
   const router = useRouter()
   const navigatePrev = () => {
-    router.push("/productivity")
+    router.push("/meditationandpeace")
   }
+
   //add metatags
 
   return (
@@ -39,4 +40,4 @@ const Aboutfollowingyourpassion = () => {
   )
 }
 
-export default Aboutfollowingyourpassion
+export default HistoryOfMeditation

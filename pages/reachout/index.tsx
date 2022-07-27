@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from "next/head"
 import useDarkMode from '../../components/hooks/useDarkMode';
 
 
@@ -13,10 +14,13 @@ const Index = () => {
 
 
   return (
-    <div
-      
-      className="w-full h-screen dark:bg-white dark:text-black bg-black p-4 text-white"
-    >
+    <div className="w-full h-screen dark:bg-white dark:text-black bg-black p-4 text-white">
+
+    <Head>
+      <title>Reach out</title>
+      <meta name="description" content="Reach out, a subsection from the blog A Tiny Improvement. Made by Finn Guha." />
+    </Head>
+
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8  ">
           <p data-aos="fade-up" className="text-7xl font-bold text-center mt-8 mb-4 ">

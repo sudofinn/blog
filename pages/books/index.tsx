@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from "next/link"
+import Head from "next/head"
 import useDarkMode from '../../components/hooks/useDarkMode'
 
 import {MdOutlineWork} from "react-icons/md"
@@ -37,7 +38,7 @@ const Index = () => {
            <AiFillBook size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "/books/petersontwelverulesforlife",
       title: "Jordan Peterson - 12 Rules for life",
       style: "shadow-black dark:shadow-white",
     },
@@ -48,7 +49,7 @@ const Index = () => {
            <BsCodeSlash size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "/books/howwritingaffectsyourbrain",
       src: BsCodeSlash,
       title: "How writing affects your brain",
       style: "shadow-black dark:shadow-white",
@@ -61,7 +62,7 @@ const Index = () => {
            <GiMeditation size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "/books/writingyourownbookisagreatidea",
       title: "Writin your own book is a great idea.",
       style: "shadow-black dark:shadow-white",
     },
@@ -69,7 +70,14 @@ const Index = () => {
 
 
   return (
+
+   
     <div className=" dark:bg-black dark:text-white flex flex-col bg-white text-black justify-center text-center w-screen h-full">
+      <Head>
+      <title>All About Books</title>, a blog made by Finn Guha.
+      <meta name="description" content="All about books, a subsection from the blog A Tiny Improvement. Made by Finn Guha." />
+
+    </Head>
       
       <div>
         <h1 data-aos="fade-up" className="text-6xl sm:text-7xl font-bold text-center pt-16 

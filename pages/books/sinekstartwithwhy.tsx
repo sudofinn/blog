@@ -1,4 +1,6 @@
 import React from 'react'
+import Head from "next/head"
+
 import useDarkMode from '../../components/hooks/useDarkMode'
 
 
@@ -14,6 +16,12 @@ const Sinekstartwithwhy = () => {
 
   return (
     <div className="w-full h-full px-6  dark:bg-white dark:text-red-500 bg-black  text-red-500">
+
+    <Head>
+      <title>Simon Sinek - Start with why  ( summary)</title>
+      <meta name="description" content="Simon Sinek - Start with why , a blogpost  from the blog A Tiny Improvement. Made by Finn Guha." />
+    </Head>
+
        <h1 data-aos="fade-up"  className="text-center  pt-12 text-7xl  mb-16 ">Simon Sinek - Start with why</h1>
 
       <span onClick={handleMode} className="flex justify-center mb-12 hover:scale-110 duration-500">

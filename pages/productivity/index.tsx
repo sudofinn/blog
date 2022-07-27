@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from "next/link"
+import Head from "next/head"
+
 import useDarkMode from '../../components/hooks/useDarkMode'
 
 import {MdOutlineWork} from "react-icons/md"
@@ -69,6 +71,12 @@ const Index = () => {
 
   return (
     <div className="  dark:bg-black dark:text-white  flex flex-col bg-white text-black justify-center text-center w-screen h-full">
+
+    <Head>
+      <title>Productivity</title>
+      <meta name="description" content="Productivity, a subsection from the blog A Tiny Improvement. Made by Finn Guha." />
+
+    </Head>
 
       
 

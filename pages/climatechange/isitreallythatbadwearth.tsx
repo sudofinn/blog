@@ -7,13 +7,13 @@ import {
   FaSun,
 } from 'react-icons/fa';
 
-const Aboutfollowingyourpassion = () => {
+const IsItReallyThatBadWOurEarth= () => {
   const [darkTheme, setDarkTheme] = useDarkMode();
   const handleMode = () => setDarkTheme(!darkTheme);
 
   const router = useRouter()
   const navigatePrev = () => {
-    router.push("/productivity")
+    router.push("/climatechange")
   }
   //add metatags
 
@@ -39,4 +39,4 @@ const Aboutfollowingyourpassion = () => {
   )
 }
 
-export default Aboutfollowingyourpassion
+export default IsItReallyThatBadWOurEarth

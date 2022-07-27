@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from "next/link"
+import Head from "next/head"
 import useDarkMode from '../../components/hooks/useDarkMode'
 
 import {MdOutlineWork} from "react-icons/md"
@@ -17,6 +18,8 @@ const Index = () => {
   const [darkTheme, setDarkTheme] = useDarkMode();
   const handleMode = () => setDarkTheme(!darkTheme);
 
+
+  //add metatags
   const techs = [
     {
       id: 1,
@@ -25,7 +28,7 @@ const Index = () => {
            <MdOutlineWork size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "/climatechange/whyearthhotter",
       title: "Why does the earth get hotter ( explained for beginners and experts ) ?",
       style: "shadow-black dark:shadow-white",
     },
@@ -37,7 +40,7 @@ const Index = () => {
            <AiFillBook size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "/climatechange/whatisclubofrome",
       title: "What is the Club of Rome ?",
       style: "shadow-black dark:shadow-white",
     },
@@ -48,7 +51,7 @@ const Index = () => {
            <BsCodeSlash size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "/climatechange/isitreallythatbadwearth",
       src: BsCodeSlash,
       title: "Is it really that bad w. our earth ?",
       style: "shadow-black dark:shadow-white",
@@ -61,7 +64,7 @@ const Index = () => {
            <GiMeditation size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "/climatechange/workforbetterfutureearth",
       title: "Work for a better future w. a healthy earth ( motivation and incentive ) ?",
       style: "shadow-black dark:shadow-white",
     },
@@ -70,6 +73,11 @@ const Index = () => {
 
   return (
     <div className=" dark:bg-black dark:text-white flex flex-col  bg-white text-black justify-center text-center w-screen h-full">
+      <Head>
+      <title>Climate change </title>
+      <meta name="description" content="Climate change, a subsection from the blog A Tiny Improvement. Made by Finn Guha." />
+
+    </Head> 
       
       <div>
         <h1 data-aos="fade-up" className="text-6xl sm:text-7xl font-bold text-center pt-16 

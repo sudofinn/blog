@@ -1,4 +1,6 @@
 import React from 'react'
+import Head from "next/head"
+
 import useDarkMode from '../../components/hooks/useDarkMode'
 
 import {
@@ -14,6 +16,13 @@ const AppsEveryday = () => {
 
   return (
     <div className="w-full h-full px-6  dark:bg-white dark:text-orange-400 bg-black  text-orange-400">
+
+    <Head>
+      <title>Apps I use Everyday</title>
+      <meta name="description" content="Apps I use Everyday, a blogpost from the productivity section
+       from the blog A Tiny Improvement. Made by Finn Guha." />
+    </Head>
+
       <h1 data-aos="fade-up"  className="text-center  pt-12 text-7xl  mb-16 ">Apps I use Everyday</h1>
 
       <span onClick={handleMode} className="flex justify-center mb-12 hover:scale-110 duration-500">
