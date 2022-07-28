@@ -1,4 +1,6 @@
 const Favicon = (): JSX.Element => {
+
+    //does not work w. _document.tsx
     return (
         <>
              <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png"/>
