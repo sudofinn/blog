@@ -16,7 +16,7 @@ const FindMe = () => {
            <TbWorld size={30} />
         </>
       ),
-      href: "https://finnguha.vercel.app",
+      href: "https://finnguha.dev/",
       title: "My Homepage ",
       style: "shadow-black",
     },

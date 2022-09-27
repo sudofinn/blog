@@ -1,21 +1,11 @@
-5. evtl. paar kleine css battles machen https://cssbattle.dev/play/111
 
-Now
-make icon ( in figma just ati in great vibes font)
+1. make icon ( in figma just ati in great vibes font)
 ( not working on ipad or phone)
 
-Next day
-fix problem ( ipad chrome edgs when switchign mode (darkmode) sometimes cutting edges, after 1 sec back to normal)
+
+2.fix group ( if clicked on parent div, should go to webiste, not if only on )
 
 
-
-fix group ( if clicked on parent div, should go to webiste, not if only on )
-
-
-
-make scrollbar again ( be cautious of this changes something for the app),make overflow-x:hidden
- ( be cautious of this changes something for the app) ( SHOULD WORK)
-use ::selection to make specific color when highlighting text ( not that ugly blue)
 
 
 
