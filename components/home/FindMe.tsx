@@ -16,7 +16,7 @@ const FindMe = () => {
            <TbWorld size={30} />
         </>
       ),
-      href: "https://finnguha.dev/",
+      href: "https://example.com/",
       title: "My Homepage ",
       style: "shadow-black",
     },
@@ -29,7 +29,7 @@ const FindMe = () => {
            <AiFillGithub size={30} />
         </>
       ),
-      href:"https://github.com/sudofinn",
+      href:"https://github.com/",
       title:"My Github Profil",
       style:"shadow-black"
       }

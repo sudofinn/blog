@@ -72,6 +72,7 @@ const Newidea = () => {
         <h1 data-aos="fade-up" className="text-6xl sm:text-7xl font-bold text-center pt-16 
          mb-16 ">A collection of ideas</h1>
         
+        
           <span onClick={handleMode} className="flex justify-center mb-12 hover:scale-110 duration-500">
         {darkTheme ? (
           <FaSun size='40' className='top-navigation-icon' />
@@ -81,12 +82,14 @@ const Newidea = () => {
       </span>
 
 
+
         <p data-aos="fade-up" className="text-2xl dark:shadow-white shadow-xl shadow-black leading-[50px] sm:leading-[70px]
         text-center mb-24 py-8 mx-8 px-4 sm:mx-48 ">This is a collection of ideas for upcoming blogposts. Some might make it and become 
           a full post while others stay as ideas. I just want to share with you what I am working on
           instead of only presenting the finished version which is what I usually see.
         </p>
       </div>
+
 
      <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-24 text-center mb-8 py-12 px-12 sm:px-32">
           {techs.map(({ id, href, child, title, style }) => (
